@@ -1,3 +1,4 @@
+{-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE FlexibleInstances #-}
 
 {- |
@@ -136,7 +137,8 @@ import Data.Colour.Names as Colours
 import Data.Colour.SRGB (channelRed, channelBlue, channelGreen, toSRGB)
 import Data.List (elemIndices, nub, intercalate)
 import qualified Data.List.NonEmpty as NE
-import Data.Semigroup (Semigroup((<>), sconcat), Monoid(mconcat, mempty, mappend))
+import Data.Monoid
+import Data.Semigroup
 import qualified Data.Set as Set
 import System.FilePath (FilePath)
 
